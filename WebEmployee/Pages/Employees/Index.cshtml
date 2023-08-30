@@ -4,17 +4,18 @@
 }
 
 <br />
-<h2>List Of Employee Names</h2>
-    <a class="btn btn-primary btn-sm" href="/Employees/Create">Added Employee</a>
+<h2>Daftar Karyawan</h2>
+    <a class="btn btn-primary btn-sm" href="/Employees/Create">Tambah Krayawan</a>
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Address</th>
-                <th>Positions</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Positions</th>
+
             </tr>
         </thead>
         <tbody>
@@ -22,19 +23,18 @@
             {
 
 
-                <tr>
-                    <td>@employee.Id</td>
-                    <td>@employee.name</td>
-                    <td>@employee.email</td>
-                    <td>@employee.phone</td>
-                    <td>@employee.address</td>
-                    <td>@employee.positions</td>
-                    <td>
-                        <a class="btn-primary btn-sm" href="/Employees/Edit?id=@employee.Id">Edit</a>
-                        <a class="btn-danger btn-sm" href="/Employees/Delete?id=@employee.Id">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.name</td>
+                <td>@employee.email</td>
+                <td>@employee.phone</td>
+                <td>@employee.address</td>
+                <td>@employee.positions</td>
+                <td>
+                    <a class="btn-primary btn-sm" href="/Employees/Edit?id=@employee.Id">Edit</a>
+                    <a class="btn-danger btn-sm" href="/Employees/Delete?id=@employee.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

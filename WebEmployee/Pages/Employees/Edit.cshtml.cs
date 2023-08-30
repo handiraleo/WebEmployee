@@ -21,7 +21,7 @@ namespace WebEmployee.Pages.Employees
                     String sql = "SELECT * FROM employees WHERE id=@id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        command.Parameters.AddWithValue("@Id",Id);
+                        command.Parameters.AddWithValue("@Id", Id);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
